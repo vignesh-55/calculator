@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+}
+
+.calculator > button{
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid rgb(1, 111, 161);
+    border-radius: 5px;
+    background: rgb(171, 210, 241);
+    cursor: pointer;
+}
+
+.calculator > button:active{
+    background: rgb(211, 226, 240);
+}
+
+.span-two-ac{
+    grid-row: span 2;
+    color: red;
+}
+
+.span-two-eq{
+    grid-column: span 2;
+}
+
+.display{
+    grid-column: 1 / -1;
+    border: 1px solid floralwhite;
+    border-radius: 5px;
+    background: rgb(43, 42, 42);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.previous{
+    color: rgba(250, 243, 216,0.75);
+    font-size: 1rem;
+}
+
+.current{
+    color: cornsilk;
+    font-size: 2rem;
+}
