@@ -9,3 +9,5 @@ Features:
 6. By default if no input is present screen will display 0.
 7. Back button included to delete one element. It is using the slice operation on the input.
 8. Display will clear after clicking "=" button when calculations are completed or only one value is given for calculation.
+
+Live Preview:- https://vignesh-55.github.io/calculator/
